@@ -61,7 +61,9 @@
                     var linkThumb = $(slick.$slides[index]).data('thumb');
                     var caption = $(slick.$slides[index]).data('caption');
                     return  '<img src="' + linkThumb + '">' +
-                            '<span class="caption-dots-slick1">' + caption + '</span>';
+                            '<span class="caption-dots-slick1"></span>';
+                           /* '<img src="' + linkThumb + '">' +
+                            '<span class="caption-dots-slick1">' + caption + '</span>';*/
                 },
             });
 
