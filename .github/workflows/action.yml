@@ -18,7 +18,7 @@ jobs:
 
       - name: install gulp
         run: | 
-          npm install gulp gulp-jshint gulp-clean gulp-uglyfy gulp-concat gulp-htmlmin gulp-clean-css run-sequence
+          npm install gulp gulp-jshint gulp-clean gulp-uglify gulp-concat gulp-htmlmin gulp-clean-css run-sequence
           gulp default
       
 
