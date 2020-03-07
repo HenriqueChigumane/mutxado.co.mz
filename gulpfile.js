@@ -34,5 +34,5 @@ gulp.task('cssmin',function () {
     .pipe(gulp.dest('dest/css/'))
 })
  gulp.task('default',function (cd) {
-     return runSequence('clean',['jshint','cssmin','htmlmin'])
+     return runSequence('clean',['cssmin','htmlmin','concat'])
  })
