@@ -1,0 +1,20 @@
+
+name: Bundle Action
+description:test,commit on push
+          
+ - name: install gulp
+    run: | 
+        npm install gulp gulp-jshint gulp-clean gulp-uglify gulp-concat gulp-htmlmin gulp-clean-css run-sequence
+        npm test
+        
+inputs:
+  mastodon-url: 
+    description: URL of Mastodon instance
+    required: true
+  message:
+    description: 'Message'
+    default: New commit to repository!
+
+runs:
+  using: node10
+  main: dist/index.js
