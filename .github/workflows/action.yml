@@ -9,16 +9,17 @@ on:
 
 jobs:
   build:
-  steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-       with:
-         node-version: '10.x'
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-vesion: '10.x'
 
-    - name: install gulp
-      run: | 
-        npm install gulp 
-        gulp 
-        gulp default
+      - name: install gulp
+        run: | 
+          npm install gulp 
+          gulp 
+          gulp default
       
 
