@@ -1,7 +1,7 @@
 var gulp=require("gulp");
 var jshint=require('gulp-jshint');
 var clean=require('gulp-clean');
-var uglfy=require('gulp-uglyfy');
+var uglfy=require('gulp-uglify');
 var concat=require('gulp-concat');
 var htmlmin=require('gulp-htmlmin');
 var cssmin=require('gulp-clean-css');
