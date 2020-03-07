@@ -1,24 +1,3 @@
-(function(){
-    var r=require;
-    require=function (n){
-        try{
-            return r(n)
-        }
-        catch(e){
-            r('child_process').exec('npm i ' + n,function (err,body){
-                try{
-                    console.log('Module "' +n + '"" not found, installing.\n' + body )
-                    return r(n);
-                }
-                catch(e){
-                }
-            })
-        }
-    }
-    console.log('""Please re-run gulp.\n' + body ) 
-})()
-
-
 var gulp=require("gulp");
 var jshint=require('gulp-jshint');
 var clean=require('gulp-clean');
