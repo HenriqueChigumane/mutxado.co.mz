@@ -1,5 +1,4 @@
 var gulp=require("gulp");
-var jshint=require('gulp-jshint');
 var clean=require('gulp-clean');
 var uglfy=require('gulp-uglify');
 var concat=require('gulp-concat');
