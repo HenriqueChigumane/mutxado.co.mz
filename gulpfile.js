@@ -32,6 +32,5 @@ gulp.task('cssmin',function () {
     return gulp.src('vendor/**/*.css','css/**/*.css').pipe(cssmin()).pipe('styles.min.css')
     .pipe(gulp.dest('dest/css/'))
 })
- gulp.task('default',function (cd) {
-     return runSequence('clean',['cssmin','htmlmin','concat'])
+ gulp.task('default',['cssmin','htmlmin','concat']) {
  })
